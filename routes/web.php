@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Routing
+ */
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\TarifController;

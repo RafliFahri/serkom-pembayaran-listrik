@@ -13,7 +13,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\App\\Http\\Controllers\\AuthController\u003A\u003Alogin\u0028\u0029",
             "name": "login",
-            "summary": "",
+            "summary": "Melakukan\u0020Login\u0020untuk\u0020Customer\/Pelanggan",
             "url": "classes/App-Http-Controllers-AuthController.html#method_login"
         },                {
             "fqsen": "\\App\\Http\\Controllers\\AuthController\u003A\u003AindexAdmin\u0028\u0029",
@@ -736,6 +736,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Tests-Feature-AuthTest.html"
         },                {
+            "fqsen": "\\Tests\\Feature\\AuthTest\u003A\u003AsetUp\u0028\u0029",
+            "name": "setUp",
+            "summary": "",
+            "url": "classes/Tests-Feature-AuthTest.html#method_setUp"
+        },                {
             "fqsen": "\\Tests\\Feature\\AuthTest\u003A\u003Atest_unathorized_cant_access_pelanggan_dashboard\u0028\u0029",
             "name": "test_unathorized_cant_access_pelanggan_dashboard",
             "summary": "",
@@ -785,6 +790,16 @@ Search.appendIndex(
             "name": "test_admin_can_logout",
             "summary": "",
             "url": "classes/Tests-Feature-AuthTest.html#method_test_admin_can_logout"
+        },                {
+            "fqsen": "\\Tests\\Feature\\AuthTest\u003A\u003A\u0024user",
+            "name": "user",
+            "summary": "",
+            "url": "classes/Tests-Feature-AuthTest.html#property_user"
+        },                {
+            "fqsen": "\\Tests\\Feature\\AuthTest\u003A\u003A\u0024pelanggan",
+            "name": "pelanggan",
+            "summary": "",
+            "url": "classes/Tests-Feature-AuthTest.html#property_pelanggan"
         },                {
             "fqsen": "\\Tests\\Feature\\LevelTest",
             "name": "LevelTest",
@@ -991,6 +1006,71 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Tests-TestCase.html"
         },                {
+            "fqsen": "\\Tests\\Unit\\LevelTest",
+            "name": "LevelTest",
+            "summary": "",
+            "url": "classes/Tests-Unit-LevelTest.html"
+        },                {
+            "fqsen": "\\Tests\\Unit\\LevelTest\u003A\u003Atest_create_level\u0028\u0029",
+            "name": "test_create_level",
+            "summary": "Test\u0020creating\u0020a\u0020level.",
+            "url": "classes/Tests-Unit-LevelTest.html#method_test_create_level"
+        },                {
+            "fqsen": "\\Tests\\Unit\\LevelTest\u003A\u003Atest_update_level\u0028\u0029",
+            "name": "test_update_level",
+            "summary": "Test\u0020updating\u0020a\u0020level.",
+            "url": "classes/Tests-Unit-LevelTest.html#method_test_update_level"
+        },                {
+            "fqsen": "\\Tests\\Unit\\LevelTest\u003A\u003Atest_delete_level\u0028\u0029",
+            "name": "test_delete_level",
+            "summary": "Test\u0020deleting\u0020a\u0020level.",
+            "url": "classes/Tests-Unit-LevelTest.html#method_test_delete_level"
+        },                {
+            "fqsen": "\\Tests\\Unit\\PelangganTest",
+            "name": "PelangganTest",
+            "summary": "",
+            "url": "classes/Tests-Unit-PelangganTest.html"
+        },                {
+            "fqsen": "\\Tests\\Unit\\PelangganTest\u003A\u003Atest_create_pelanggan\u0028\u0029",
+            "name": "test_create_pelanggan",
+            "summary": "Test\u0020creating\u0020a\u0020pelanggan.",
+            "url": "classes/Tests-Unit-PelangganTest.html#method_test_create_pelanggan"
+        },                {
+            "fqsen": "\\Tests\\Unit\\PelangganTest\u003A\u003Atest_update_pelanggan\u0028\u0029",
+            "name": "test_update_pelanggan",
+            "summary": "Test\u0020updating\u0020a\u0020pelanggan.",
+            "url": "classes/Tests-Unit-PelangganTest.html#method_test_update_pelanggan"
+        },                {
+            "fqsen": "\\Tests\\Unit\\PelangganTest\u003A\u003Atest_delete_pelanggan\u0028\u0029",
+            "name": "test_delete_pelanggan",
+            "summary": "Test\u0020deleting\u0020a\u0020pelanggan.",
+            "url": "classes/Tests-Unit-PelangganTest.html#method_test_delete_pelanggan"
+        },                {
+            "fqsen": "\\Tests\\Unit\\PelangganTest\u003A\u003Atest_pelanggan_tarif_relationship\u0028\u0029",
+            "name": "test_pelanggan_tarif_relationship",
+            "summary": "Test\u0020the\u0020relationship\u0020with\u0020Tarif.",
+            "url": "classes/Tests-Unit-PelangganTest.html#method_test_pelanggan_tarif_relationship"
+        },                {
+            "fqsen": "\\Tests\\Unit\\TarifTest",
+            "name": "TarifTest",
+            "summary": "",
+            "url": "classes/Tests-Unit-TarifTest.html"
+        },                {
+            "fqsen": "\\Tests\\Unit\\TarifTest\u003A\u003Atest_create_tarif\u0028\u0029",
+            "name": "test_create_tarif",
+            "summary": "Test\u0020creating\u0020a\u0020tarif.",
+            "url": "classes/Tests-Unit-TarifTest.html#method_test_create_tarif"
+        },                {
+            "fqsen": "\\Tests\\Unit\\TarifTest\u003A\u003Atest_update_tarif\u0028\u0029",
+            "name": "test_update_tarif",
+            "summary": "Test\u0020updating\u0020a\u0020tarif.",
+            "url": "classes/Tests-Unit-TarifTest.html#method_test_update_tarif"
+        },                {
+            "fqsen": "\\Tests\\Unit\\TarifTest\u003A\u003Atest_delete_tarif\u0028\u0029",
+            "name": "test_delete_tarif",
+            "summary": "Test\u0020deleting\u0020a\u0020tarif.",
+            "url": "classes/Tests-Unit-TarifTest.html#method_test_delete_tarif"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -1050,5 +1130,10 @@ Search.appendIndex(
             "name": "Tests",
             "summary": "",
             "url": "namespaces/tests.html"
+        },                {
+            "fqsen": "\\Tests\\Unit",
+            "name": "Unit",
+            "summary": "",
+            "url": "namespaces/tests-unit.html"
         }            ]
 );
