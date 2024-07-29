@@ -17,8 +17,8 @@ class TarifFactory extends Factory
     public function definition(): array
     {
         return [
-            'daya' => $this->faker->numberBetween(500,5000),
-            'tarifperkwh' => $this->faker->numberBetween(1000, 2000),
+            'daya' => $this->faker->numberBetween(6600,10000),
+            'tarifperkwh' => $this->faker->numberBetween(1700, 2500),
         ];
     }
 }

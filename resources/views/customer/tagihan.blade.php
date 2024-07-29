@@ -1,7 +1,5 @@
 @extends('customer.index')
 @section('custcontent')
-    @dump($tagihan)
-    @dump(\Illuminate\Support\Facades\Auth::guard('customer')->hasUser() )
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <div class="flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4 md:space-y-0 py-4 bg-white dark:bg-gray-900">
             <span class="text-2xl mb-4 font-bold">Tagihan Penggunaan Listrik</span>

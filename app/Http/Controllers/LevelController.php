@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Level;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\View\View;
 use League\CommonMark\Exception\LogicException;
@@ -47,10 +48,15 @@ class LevelController extends Controller
         if ($validatedData->fails()) {
             return back()->withErrors($validatedData)->withInput();
         }
-        $modelLevel = new Level();
-        $modelLevel->nama_level = $request->input('nama_level');
-        $modelLevel->save();
-        return redirect()->route('admin.level.index');
+        try {
+            $modelLevel = new Level();
+            $modelLevel->nama_level = $request->input('nama_level');
+            $modelLevel->save();
+            return redirect()->route('admin.level.index');
+        } catch (\Exception $th) {
+            Log::info('Kesalahan dalam melakukan insert data');
+            return back()->withErrors($validatedData)->withInput();
+        }
     }
 
     /**

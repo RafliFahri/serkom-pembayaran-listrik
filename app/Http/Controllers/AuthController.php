@@ -52,7 +52,8 @@ class AuthController extends Controller
     /**
      * @param Request $request
      * @return \Illuminate\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
-     * @note Login untuk admin
+     * @version 2
+     * @note menambahkan regenerate session agar autentikasi dapat berjalan dengan baik
      */
     function loginAdmin(Request $request)
     {

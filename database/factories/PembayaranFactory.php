@@ -19,7 +19,7 @@ class PembayaranFactory extends Factory
         return [
             'id_tagihan' => $this->faker->numberBetween(1, 5),
             'id_pelanggan' => $this->faker->numberBetween(1, 5),
-            'tanggal_pembayaran' => $this->faker->date(),
+            'tanggal_pembayaran' => $this->faker->date('Y-m-d'),
             'bulan_bayar' => $this->faker->month('now'),
             'biaya_admin' => $this->faker->randomNumber(7),
             'total_bayar' => $this->faker->randomNumber(7),

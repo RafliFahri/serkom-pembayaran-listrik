@@ -58,9 +58,13 @@ class TagihanController extends Controller
      * Menampilkan data Pembayaran pengguna
      *
      * @return View Menampilakan penggunaan yang belum di konfirmasi
+     *
      */
     public function indexCust()
     {
+        // Kode ini menggunakan Kombinasi Eloquent dan Query Builder sebagai penunjang
+        // fungsionalitas aplikasi terutama fitur ini yang membutuhkan query kompleks
+        // untuk mendapatkan data yang sesuai
         $tagihan = Pembayaran::join('tagihan as t', 'pembayaran.id_tagihan', '=', 't.id_tagihan')
             ->join('pelanggan as pel', 'pembayaran.id_pelanggan', '=', 'pel.id_pelanggan')
             ->select([
