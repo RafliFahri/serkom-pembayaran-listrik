@@ -39,20 +39,20 @@ class AuthTest extends TestCase
     }
     public function test_pelanggan_can_access_dashboard(): void
     {
-//        $user = Pelanggan::factory()->create();
+//        $user = PelangganTest::factory()->create();
         $response = $this->actingAs($this->pelanggan, 'customer')->get('/dashboard');
         $response->assertStatus(200);
     }
     public function test_pelanggan_cant_access_admin_dashboard(): void
     {
-//        $user = Pelanggan::factory()->create();
+//        $user = PelangganTest::factory()->create();
         $response = $this->actingAs($this->pelanggan, 'customer')->get('/admin/dashboard');
         $response->assertStatus(302);
         $response->assertRedirect('/dashboard');
     }
     public function test_pelanggan_can_logout(): void
     {
-//        $user = Pelanggan::factory()->create([]);
+//        $user = PelangganTest::factory()->create([]);
         $response = $this->actingAs($this->pelanggan, 'customer')->post('/logout');
         $response->assertStatus(302);
         $response->assertRedirect('/login');
@@ -61,8 +61,8 @@ class AuthTest extends TestCase
     {
 //        $admin = User::factory()->create();
         $response = $this->post('admin/login', [
-            'username'=>$admin->username,
-            'password'=>$admin->password
+            'username'=>$this->user->username,
+            'password'=>$this->user->password
         ]);
         $response->assertStatus(302);
         $response->assertRedirect('admin/dashboard');
