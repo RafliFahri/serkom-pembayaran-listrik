@@ -46,7 +46,7 @@ return new class extends Migration
         });
         Schema::create('tagihan', function (Blueprint $table) {
             $table->id('id_tagihan');
-            $table->foreignId('id_penggunaan')->constrained('penggunaan', 'id_penggunaan')->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignId('id_penggunaan')->nullable()->constrained('penggunaan', 'id_penggunaan')->cascadeOnUpdate()->nullOnDelete();
             $table->foreignId('id_pelanggan')->constrained('pelanggan', 'id_pelanggan')->cascadeOnUpdate()->cascadeOnDelete();
             $table->integer('bulan');
             $table->integer('tahun');
